@@ -26,11 +26,8 @@ NonExistentPages(){
 
 # 5. What time did site get the most requests?
 TimeForTheMostRequests(){
-
-	# !!! please check in the future
-
-	echo -n "5. The most requested site: "
-	cat apache_logs.txt | awk '{print $4 " " $15}' | sed -e 's/+//; s/)"//; s/\[//' | uniq -c | sort -k 1 -nr | head -1
+	echo -n "5. The most requested site's time: "
+	cat apache_logs.txt | awk '{print $4 " " $15}' | sed -e 's/+//; s/)"//; s/\[//' | uniq -c | sort -k 1 -nr | head -1 | awk '{print $2}'
 }
 
 # 6. What search bots have accessed the site? (UA + IP)
