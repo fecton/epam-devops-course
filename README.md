@@ -4,3 +4,5 @@
 - linux_bash - Completed tasks in a linux theme
 - terraform - You may not belive but it's about terraform xDD
 - ansible
+- mysql
+- linux networking
