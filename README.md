@@ -193,24 +193,21 @@ sudo mysql -u root -p < users01.sql
 # PART 3
 ## 17. 
 ```
-
+show dbs;
+use demoDatabase;
 ```
-![Image](./screenshots)
+![Image](./screenshots/task_17.png)
 
 ## 18.
 ```
-
+db.createCollection("contacts");
 ```
-![Image](./screenshots)
+![Image](./screenshots/task_18.png)
 
-## 19.
+## 19/20.
 ```
-
+db.contacs.insert({"name":"suraj"});
+show collections;
+db.contacts.find();
 ```
-![Image](./screenshots)
-
-## 20.
-```
-
-```
-![Image](./screenshots)
+![Image](./screenshots/task_19_20.png)
