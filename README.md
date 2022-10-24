@@ -144,51 +144,73 @@ SELECT * FROM user;
 ![Image](./screenshots/task_9.png)
 
 # PART 2
-## 7. 
+## 10. Make backup of your database
+```
+sudo mysqldump -u root -p telegram_bot > users01.sql
+```
+![Image](./screenshots/task_10.png)
+
+## 11. Delete the table and/or part of the data in the table 
+```
+DROP TABLE admin;
+DELETE FROM users WHERE username='Sergey';
+```
+![Image](./screenshots/task_11_1.png)
+![Image](./screenshots/task_11_2.png)
+
+## 12. Restore your database
+```
+sudo mysql -u root -p < users01.sql
+```
+![Image](./screenshots/task_12_1.png)
+![Image](./screenshots/task_12_2.png)
+
+## 13. Transfer your local database to RDS AWS
 ```
 
 ```
-![Image]()
-
-## 8. 
-```
-
-```
-![Image]()
 ![Image](./screenshots)
 
-## 6. Constructing and executing SELECT operator with WHERE, GROUP BY and ORDER BY
+## 14. Connect to your database 
 ```
 
 ```
-![Image]()
+![Image](./screenshots)
 
-## 7. 
+## 15. Execute SELECT operator similar step 6.
 ```
 
 ```
-![Image]()
+![Image](./screenshots)
 
-## 8. 
+## 16. Create the dump of your database.
 ```
 
 ```
-![Image]()
+![Image](./screenshots)
 
-## 6. Constructing and executing SELECT operator with WHERE, GROUP BY and ORDER BY
+
+# PART 3
+## 17. 
 ```
 
 ```
-![Image]()
+![Image](./screenshots)
 
-## 7. 
+## 18.
 ```
 
 ```
-![Image]()
+![Image](./screenshots)
 
-## 8. 
+## 19.
 ```
 
 ```
-![Image]()
+![Image](./screenshots)
+
+## 20.
+```
+
+```
+![Image](./screenshots)
