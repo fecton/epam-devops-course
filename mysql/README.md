@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-# My work at the EPAM Univesity: completed tasks, experiments and so on
-- [Bash 1](bash_1/README.md)
-
-=======
 # Database Managment
 # PART 1
 ## 1. Mysql installing
@@ -202,4 +197,3 @@ show collections;
 db.contacts.find();
 ```
 ![Image](./screenshots/task_19_20.png)
->>>>>>> mysql
