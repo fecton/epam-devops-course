@@ -1,0 +1,7 @@
+[servers]
+ubuntu2	ansible_host=10.0.2.4
+ubuntu3	ansible_host=10.0.2.5
+
+[servers:vars]
+ansible_user=root
+ansible_password=77435
