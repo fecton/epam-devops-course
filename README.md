@@ -166,45 +166,31 @@ sudo mysql -u root -p < users01.sql
 ![Image](./screenshots/task_12_2.png)
 
 ## 13. Transfer your local database to RDS AWS
-```
-
-```
-![Image](./screenshots)
-
-## 14. Connect to your database 
-```
-
-```
-![Image](./screenshots)
+![Image](./screenshots/task_13.png)
+![Image](./screenshots/task_13_1.png)
 
 ## 15. Execute SELECT operator similar step 6.
-```
-
-```
-![Image](./screenshots)
+![Image](./screenshots/task_15.png)
 
 ## 16. Create the dump of your database.
-```
-
-```
-![Image](./screenshots)
+![Image](./screenshots/task_16.png)
 
 
 # PART 3
-## 17. 
+## 17. Create a database. Use the use command to connect to a new database (If it doesn't exist, Mongo will create it when you write to it).
 ```
 show dbs;
 use demoDatabase;
 ```
 ![Image](./screenshots/task_17.png)
 
-## 18.
+## 18. Create a collection. Use db.createCollection to create a collection. I'll leave the subject up to you. Run show dbs and show collections to view your database and collections.
 ```
 db.createCollection("contacts");
 ```
 ![Image](./screenshots/task_18.png)
 
-## 19/20.
+## 19/20. Create some documents. Insert a couple of documents into your collection. I'll leave the subject matter up to you, perhaps cars or hats. Use find() to list documents out.
 ```
 db.contacs.insert({"name":"suraj"});
 show collections;
