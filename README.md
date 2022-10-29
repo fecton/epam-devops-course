@@ -2,8 +2,10 @@
 - [Linux Bash](./linux_bash/README.md)
 - [MySQL](./mysql/README.md)
 - [Linux Networking](./linux_network/README.md)
+
+- [Azure](./azure/README.md)
+- [AWS](./aws/README.md)
+
 - [Terraform](./linux_network/README.md)
 - [Ansible](./ansible/README.md)
 - [Jenkins](./jenkins/README.md)
-- [AWS](./aws/README.md)
-- [Azure](./azure/README.md)
