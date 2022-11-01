@@ -14,10 +14,21 @@
 
 # Homework
 ## PART 1
+
 ### 1. Create a service connection in a Azure DevOps project to your subscription 
 ![Image](./screenshots/service_connection.png)
+
 ### 2. Find a .net pet project for the experiments
 ![Image](./screenshots/dotnet_deploy.png)
+![Image](./screenshots/donet_deployed.png)
+
+## 3. Build your app locally .net project via dotnet tool. dotnet restore/build/runBuild you 
+![Image](./screenshots/donet_view.png)
+
+### 4.	Create an Azure DevOps repo - https://learn.microsoft.com/en-us/azure/devops/repos/git/create-new-repo?view=azure-devops  You can use import repository to import from existing source control version like github
+![Image](./screenshots/git_repo_push.png)
+![Image](./screenshots)
+![Image](./screenshots)
 ![Image](./screenshots)
 ![Image](./screenshots)
 ![Image](./screenshots)
