@@ -38,10 +38,15 @@
 ![Image](./screenshots/ping_client1_server.png)
 ### Client 2 -> Server
 ![Image](./screenshots/ping_client2_server.png)
-![Image](./screenshots)
-![Image](./screenshots)
-![Image](./screenshots)
-![Image](./screenshots)
-![Image](./screenshots)
-![Image](./screenshots)
-![Image](./screenshots)
+
+## (4) Routes
+![Image](./screenshots/routes.png)
+![Image](./screenshots/routes_tracepath.png)
+
+## (5) SSH and ping
+![Image](./screenshots/route_big_mask.png)
+![Image](./screenshots/ssh.png)
+![Image](./screenshots/ssh_connect.png)
+
+## Internet
+![Image](./screenshots/inet.png)
