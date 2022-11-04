@@ -41,7 +41,33 @@
 
 ## PART 2
 
-![Image](./screenshots)
+### 1. Create an another repo to store devops code
+### 2. Create a folder terraform
+### 3. Add app service implementation - https://learn.microsoft.com/en-us/azure/app-service/provision-resource-terraform
+### 4. Integrate application insights with app service
+### 5. Updated backend "azurerm" according to the guide - https://learn.microsoft.com/en-us/azure/developer/terraform/store-state-in-azure-storage?tabs=azure-cli
+### 6. Run az login or Connect-AzAccount to connect the azure subscription from your local
+### 7. Run terraform apply to deploy infrastructure
+
+#### I created an empty container
+![Image](./screenshots/container.png)
+### Connected to the account and run commands
+![Image](./screenshots/connect_to_account.png)
+![Image](./screenshots/get_azsubscription.png)
+![Image](./screenshots/get_azcontext.png)
+![Image](./screenshots/env.png)
+![Image](./screenshots/cli_subscription.png)
+![Image](./screenshots/newazadserviceprincipal.png)
+![Image](./screenshots/object.png)
+![Image](./screenshots/setaccontext_subscription.png)
+### Start working with terraform and push the infrastructure
+![Image](./screenshots/terraform_the_beginning.png)
+![Image](./screenshots/first_syntax_errors.png)
+![Image](./screenshots/terraform_success.png)
+![Image](./screenshots/terraform_apply.png)
+![Image](./screenshots/terraform_apply_2.png)
+![Image](./screenshots/terraform_apply_result.png)
+
 ![Image](./screenshots)
 ![Image](./screenshots)
 ![Image](./screenshots)
