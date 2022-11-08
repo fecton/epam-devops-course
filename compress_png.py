@@ -81,12 +81,48 @@ def png_only(arr):
             new_arr.append(arr[i])
     return new_arr
 
+def jpg_only(arr):
+    new_arr = []
+    for i in range(len(arr)):
+        if arr[i].endswith('.jpg'):
+            new_arr.append(arr[i])
+    return new_arr
+
+def jpg_to_png():
+    folders = os.listdir('.')    
+    root = clean(folders)
+    folders = root.copy()
+
+    i = 0
+    while True:
+        if len(folders) == i:
+            break
+        tmp = os.listdir(folders[i])
+        tmp = clean(tmp)
+        tmp = list(map(lambda x: folders[i] + '/' + x, tmp))
+        folders += tmp
+        i += 1
+
+    for i in root:
+        folders.remove(i)
+    print(folders)
+    
+    png = []
+    for i in folders:
+        png += list(map(lambda x: i + '/' + x, jpg_only(os.listdir(i))))
+
+    print(png)
+
+    for file in png:
+        os.rename(file, file.replace('.jpg', '.png'))
+    
+    return png
+
 def define_png() -> list:
     folders = os.listdir('.')    
     root = clean(folders)
     print(folders)
     folders = root.copy()
-
 
     i = 0
     while True:

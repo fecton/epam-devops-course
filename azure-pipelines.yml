@@ -1,0 +1,41 @@
+# Starter pipeline
+# 1. Create a yaml pipeline with the following steps:
+#   - terraform install
+#   - terraform init
+#   - terraform plan/apply
+#
+# 2. Inside yaml pipeline add triger to main branch. The scenario - when main is updated, pipeline should run automatically
+# - https://learn.microsoft.com/en-us/azure/devops/pipelines/yaml-schema/trigger?view=azure-pipelines
+#
+# 3. Added 3 steps - terraform install, terraform init, terraform plan/apply. Plan is an optional one. You may add it as 4th step.
+
+
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- script: |
+    wget -O- https://apt.releases.hashicorp.com/gpg | gpg --dearmor | sudo tee /usr/share/keyrings/hashicorp-archive-keyring.gpg
+    echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
+    sudo apt update && sudo apt install terraform
+  displayName: 'Terraform installing'
+
+- script: terraform --version
+  displayName: 'Check Terraform version'
+# az login --service-principal -u "3bedd192-832d-4375-a657-49348e8178e2" -p "epP8Q~QdCY9M_~cHJ7GwJJkCKxw_TgS3~Z1hQaQq" --tenant "d259e8f8-a449-45fc-86fc-a08d1bcc3b0a"
+- script: |
+    export ARM_CLIENT_ID="ebe32ee3-7674-4836-9782-fb200bd24965"
+    export ARM_CLIENT_SECRET="B3_8Q~ofd9iaYEE7~937VCLAEtbRAzk7d2mtTaPn"
+    export ARM_TENANT_ID="d259e8f8-a449-45fc-86fc-a08d1bcc3b0a"
+    export ARM_SUBSCRIPTION_ID="42e8d03f-7217-47bf-9df7-7181b068c266"
+
+    cd azure/appservice_tf_quickstart
+
+    terraform init
+    terraform validate
+    terraform plan
+    terraform apply
+  displayName: 'Terraform run'
