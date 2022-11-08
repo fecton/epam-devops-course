@@ -68,6 +68,14 @@
 ![Image](./screenshots/terraform_apply_2.png)
 ![Image](./screenshots/terraform_apply_result.png)
 
+## Creating a terraform pipeline
+### 1.	Create a yaml pipeline with the following steps: terraform install, terraform init, terraform plan/apply. Plan is an optional one 
+### 2.	Inside yaml pipeline add trigger to main branch. The scenario – when main is updated, pipeline should run automatically - https://learn.microsoft.com/en-us/azure/devops/pipelines/yaml-schema/trigger?view=azure-pipelines
+### 3.	Added 3 steps – terraform install, terraform init, terraform plan/apply. Plan is an optional one. You may add it as 4th step
+
+![Image](./screenshots/terraform_pipeline_success.png)
+![Image](./screenshots/service_principal.png)
+![Image](./screenshots/good_permission.png)
 ![Image](./screenshots)
 ![Image](./screenshots)
 ![Image](./screenshots)
