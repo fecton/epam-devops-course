@@ -46,8 +46,26 @@
 ![Screenshot](./screenshots/detach_4.png)
 
 ## 12. Review the 10-minute example. Explore the possibilities of creating your own domain and domain name for your site. Note, that Route 53 not free service. Alternatively you can free register the domain name *.PP.UA and use it.
+![Screenshot](./screenshots/myapp.png)
+![Screenshot](./screenshots/random_domain.png)
+![Screenshot](./screenshots/dns.png)
 
-## 13. Launch and configure a WordPress instance with Amazon Lightsail link
+## ✅ 13. Launch and configure a WordPress instance with Amazon Lightsail link
+### Launching a wordpress instance
+![Screenshot](./screenshots/lighsail_1.png)
+![Screenshot](./screenshots/lighsail_2.png)
+![Screenshot](./screenshots/lighsail_3.png)
+![Screenshot](./screenshots/lighsail_4.png)
+![Screenshot](./screenshots/lighsail_5.png)
+![Screenshot](./screenshots/lighsail_6.png)
+### Creating a statip IP
+![Screenshot](./screenshots/lighsail_7.png)
+![Screenshot](./screenshots/lighsail_8.png)
+![Screenshot](./screenshots/lighsail_9.png)
+### Domain menu and deleting an instance
+![Screenshot](./screenshots/lighsail_10.png)
+![Screenshot](./screenshots/lighsail_11.png)
+![Screenshot](./screenshots/lighsail_12.png)
 
 ## 14. Review the 10-minute Store and Retrieve a File. Repeat, creating your own repository.
 
