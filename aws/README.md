@@ -77,7 +77,43 @@
 My repository in Amazon S3
 ![Screenshot](./screenshots/s3_7.png)
 
-## 15. Review the 10-minute example Batch upload files to the cloud to Amazon S3 using the AWS CLI. Create a user AWS IAM, configure CLI AWS and upload any files to S3.
+## ✅ 15. Review the 10-minute example Batch upload files to the cloud to Amazon S3 using the AWS CLI. Create a user AWS IAM, configure CLI AWS and upload any files to S3.
+
+### Current Path is: C:\\users\\user
+
+![Screenshot](./screenshots/batch_1.png)
+![Screenshot](./screenshots/batch_2.png)
+![Screenshot](./screenshots/batch_3.png)
+![Screenshot](./screenshots/batch_4.png)
+![Screenshot](./screenshots/batch_5.png)
+![Screenshot](./screenshots/batch_6.png)
+
+```
+aws configure
+```
+![Screenshot](./screenshots/batch_7.png)
+
+Creating a bucket with name "backup-bucket-fecton-at-epam"
+```
+aws s3 mb s3://backup-bucket-fecton-at-epam
+```
+![Screenshot](./screenshots/batch_8.png)
+
+```
+aws s3 cp "C:\users\user\top-secret.zip" s3://backup-bucket-fecton-at-epam
+```
+![Screenshot](./screenshots/batch_9.png)
+
+```
+aws s3 cp s3://backup-bucket-fecton-at-epam/top-secret.zip C:\users\user
+```
+![Screenshot](./screenshots/batch_10.png)
+![Screenshot](./screenshots/batch_11.png)
+
+```
+aws s3 rm s3://backup-bucket-fecton-at-epam/top-secret.zip
+```
+![Screenshot](./screenshots/batch_12.png)
 
 ## 16. Review the 10-minute example Deploy Docker Containers on Amazon Elastic Container Service (Amazon ECS). Repeat, create a cluster, and run the online demo application or better other application with custom settings.
 
