@@ -67,12 +67,27 @@
 ![Screenshot](./screenshots/lighsail_11.png)
 ![Screenshot](./screenshots/lighsail_12.png)
 
-## 14. Review the 10-minute Store and Retrieve a File. Repeat, creating your own repository.
+## ✅ 14. Review the 10-minute Store and Retrieve a File. Repeat, creating your own repository.
+![Screenshot](./screenshots/s3_1.png)
+![Screenshot](./screenshots/s3_2.png)
+![Screenshot](./screenshots/s3_3.png)
+![Screenshot](./screenshots/s3_4.png)
+![Screenshot](./screenshots/s3_5.png)
+![Screenshot](./screenshots/s3_6.png)
+My repository in Amazon S3
+![Screenshot](./screenshots/s3_7.png)
 
 ## 15. Review the 10-minute example Batch upload files to the cloud to Amazon S3 using the AWS CLI. Create a user AWS IAM, configure CLI AWS and upload any files to S3.
 
 ## 16. Review the 10-minute example Deploy Docker Containers on Amazon Elastic Container Service (Amazon ECS). Repeat, create a cluster, and run the online demo application or better other application with custom settings.
 
-## 17. Run a Serverless "Hello, World!" with AWS Lambda.
+## ✅ 17. Run a Serverless "Hello, World!" with AWS Lambda.
+![Screenshot](./screenshots/lambda_1.png)
+![Screenshot](./screenshots/lambda_2.png)
+![Screenshot](./screenshots/lambda_3.png)
+![Screenshot](./screenshots/lambda_4.png)
+![Screenshot](./screenshots/lambda_5.png)
+![Screenshot](./screenshots/lambda_6.png)
+![Screenshot](./screenshots/lambda_7.png)
 
 ## 18. Create a static website on Amazon S3, publicly available (link1 or link2 - using a custom domain registered with Route 53). Post on the page your own photo, the name of the educational program (EPAM Cloud&DevOps Fundamentals Autumn 2022), the list of AWS services with which the student worked within the educational program or earlier and the full list with links of completed labs (based on tutorials or qwiklabs). Provide the link to the website in your report and СV.
