@@ -14,7 +14,8 @@
 ![Certificate](./screenshots/aws-educate-getting-started-with-storage.png)
 
 
-## ⏳ 5. Register and pass free courses on AWS Skillbuilder. AWS Cloud Practitioner Essentials: Core Services, AWS Cloud Practitioner Essentials: Cloud Concepts. Try AWS Cloud Quest: Cloud Practitioner.
+## ✅ 5. Register and pass free courses on AWS Skillbuilder. AWS Cloud Practitioner Essentials: Core Services, AWS Cloud Practitioner Essentials: Cloud Concepts. Try AWS Cloud Quest: Cloud Practitioner.
+![Certificate](./screenshots/aws_cloud_practitioner_essentials.png)
 ![Certificate](./screenshots/aws-cloud-quest-cloud-practitioner.png)
 
 ## ⏳ 6. Pass free courses on Amazon qwiklabs
@@ -45,10 +46,9 @@
 ![Screenshot](./screenshots/detach_3.png)
 ![Screenshot](./screenshots/detach_4.png)
 
-## 12. Review the 10-minute example. Explore the possibilities of creating your own domain and domain name for your site. Note, that Route 53 not free service. Alternatively you can free register the domain name *.PP.UA and use it.
-![Screenshot](./screenshots/myapp.png)
-![Screenshot](./screenshots/random_domain.png)
+## ✅ 12. Review the 10-minute example. Explore the possibilities of creating your own domain and domain name for your site. Note, that Route 53 not free service. Alternatively you can free register the domain name *.PP.UA and use it.
 ![Screenshot](./screenshots/dns.png)
+![Screenshot](./screenshots/dns2.png)
 
 ## ✅ 13. Launch and configure a WordPress instance with Amazon Lightsail link
 ### Launching a wordpress instance
