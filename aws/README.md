@@ -111,7 +111,18 @@ aws s3 rm s3://backup-bucket-fecton-at-epam/top-secret.zip
 ```
 ![Screenshot](./screenshots/batch_12.png)
 
-# 16. Review the 10-minute example Deploy Docker Containers on Amazon Elastic Container Service (Amazon ECS). Repeat, create a cluster, and run the online demo application or better other application with custom settings.
+# ✅ 16. Review the 10-minute example Deploy Docker Containers on Amazon Elastic Container Service (Amazon ECS). Repeat, create a cluster, and run the online demo application or better other application with custom settings.
+![Screenshot](./screenshots/ecs_1.png)
+![Screenshot](./screenshots/ecs_2.png)
+![Screenshot](./screenshots/ecs_3.png)
+![Screenshot](./screenshots/ecs_4.png)
+![Screenshot](./screenshots/ecs_5.png)
+![Screenshot](./screenshots/ecs_6.png)
+![Screenshot](./screenshots/ecs_7.png)
+![Screenshot](./screenshots/ecs_8.png)
+![Screenshot](./screenshots/ecs_9.png)
+![Screenshot](./screenshots/ecs_10.png)
+
 
 # ✅ 17. Run a Serverless "Hello, World!" with AWS Lambda.
 ![Screenshot](./screenshots/lambda_1.png)
