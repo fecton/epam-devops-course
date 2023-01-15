@@ -137,6 +137,26 @@ aws s3 rm s3://backup-bucket-fecton-at-epam/top-secret.zip
 
 # 18. Create a static website on Amazon S3, publicly available ([link1](https://docs.aws.amazon.com/AmazonS3/latest/dev/HostingWebsiteOnS3Setup.html) or [link2](https://docs.aws.amazon.com/AmazonS3/latest/dev/website-hosting-custom-domain-walkthrough.html) - using a custom domain registered with Route 53). Post on the page your own photo, the name of the educational program (EPAM Cloud&DevOps Fundamentals Autumn 2022), the list of AWS services with which the student worked within the educational program or earlier and the full list with links of completed labs (based on [tutorials](https://aws.amazon.com/getting-started/hands-on/?awsf.getting-started-content-type=content-type%23hands-on&?e=gs2020&p=gsrc) or [qwiklabs](https://amazon.qwiklabs.com/)). Provide the link to the website in your report and СV.
 
+alytvynenko.pp.ua - main domain (bucket with site's files)
+log.alytvynenko.pp.ua - logs of file
+www.alytvynenko.pp.ua - redirect from www.* to @
+![Image](./static-website/Screenshot_1.png)
+Our simple site works than let's load my simple page
+![Image](./static-website/Screenshot_2.png)
+Page on a local machine
+![Image](./static-website/Screenshot_3.png)
+DNS Nameserver configuration
+![Image](./static-website/Screenshot_4.png)
+Place logs in the bucket "logs.alytvynenko.pp.ua"
+![Image](./static-website/Screenshot_5.png)
+Yeah, here are a lot of logs xD
+![Image](./static-website/Screenshot_6.png)
+![Image](./static-website/Screenshot_7.png)
+Uploaded site
+![Image](./static-website/Screenshot_8.png)
+alytvynenko.pp.ua works properly
+![Image](./static-website/Screenshot_9.png)
+
 # Note: I've already had a website with custom domain: https://alytvynenko.online
-# But this task will be avaliable here: https://alytvynenko.pp.ua
+# But this task will be avaliable here: https://alytvynenko.pp.ua 
 
