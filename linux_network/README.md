@@ -1,4 +1,5 @@
-# Linux Networking
+# Epam University
+## Linux Networking
 
 ## Network map
 ![Image](./screenshots/task.png)

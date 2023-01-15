@@ -1,5 +1,5 @@
 # Epam University
-## Docker
+## Jenkins
 
 ![Image](./img/jenkins_1.png)
 ![Image](./img/jenkins_2.png)
