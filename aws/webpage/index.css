@@ -1,0 +1,121 @@
+:root{
+    --header_footerColor: #277BC0;
+    --navColor: #FFB200;
+    --bodyColor: #FFCB42;
+    --textColor: #293462;
+    --linkColor: #D61C4E;
+    --gold:  #432C7A;
+}
+
+
+*{
+    font-family: "Tahoma";
+    font-weight: normal;
+    color: var(--textColor);
+    margin:0;
+    padding:0;
+    font-size: 2vw;
+    list-style: square;
+}
+
+body{
+    background-color: var(--bodyColor);
+}
+
+header{
+    background-color: var(--header_footerColor);
+    padding: 1.3vw;
+}
+
+footer{
+    background-color: var(--header_footerColor);
+    padding: 1.3vw;
+    margin-top: 3vw;
+}
+
+table, th, tr{
+    border: 0;
+}
+
+nav{
+    background-color: var(--navColor);
+    margin-bottom: 2vw;
+}
+
+th{
+    padding: 10px;
+}
+
+a{
+    color: var(--linkColor);
+}
+
+li{
+    color: var(--header_footerColor);
+}
+
+img{
+    width: 8vw;
+    border-radius: 2vw;
+}
+
+#certificates > table img{
+    width: 12vw;
+}
+
+#links > table tr th{
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+#myphoto{
+    width: 25vw;
+    border: 2px solid red;
+}
+
+.emptyRow{
+    height: 0.8vw;
+    border: none;
+}
+
+.whiteback{
+    background-color: white;
+}
+
+.linkImg{
+    width: 4vw;
+    padding: 0.5vw;
+    border-radius: 2vw;
+    border: 2px solid #2D033B;
+    background-color: white;
+}
+
+.serviceImg{
+    width: 10vw;
+    padding: 1vw;
+    border: 1px solid purple;
+    background-color: white;
+    border-radius: 1.8vw;
+}
+
+.blackBorder{
+    border: 5px solid goldenrod;
+    padding: 50px;
+}
+
+.bigImg{
+    width: 30vw;
+    border-radius: 0;
+}
+
+#header1{
+    color: var(--gold);
+}
+
+#reward{
+    width:30vw;
+}
+
+#last_modified{
+    margin-bottom: 2vw;
+}
