@@ -7,5 +7,5 @@
 - ✅ [AWS](./aws/README.md)
 
 - ✅ [Terraform](./linux_network/README.md)
-- [Ansible](./ansible/README.md)
-- [Jenkins](./jenkins/README.md)
+- ✅ [Ansible](./ansible/README.md)
+- ✅ [Jenkins](./jenkins/README.md)
