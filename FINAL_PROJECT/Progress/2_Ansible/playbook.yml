@@ -1,0 +1,109 @@
+---
+- name:   First setup
+  hosts:  all
+  become: yes
+  
+
+  tasks:
+  - name: Ping my servers
+    ping: 
+    tags: ping
+
+  - name: Update packages
+    apt:
+      update_cache: yes
+    tags: packages
+
+  - name: Upgrade packages
+    apt:
+      name:         "*"
+      state:        latest
+    tags: packages
+
+  - name: Autoremove
+    apt:
+      autoremove:   yes
+    tags: packages
+
+  - name: Upgrade system
+    apt:
+      upgrade:  dist
+    tags: packages
+
+  - name: Install Python3, PIP3, Git and VENV
+    apt:
+      pkg:
+        - python3
+        - python3-pip
+        - python3-venv
+        - git
+    tags:
+      - packages
+      - python
+
+
+- name: Install Jenkins on jenkins group
+  hosts:  jenkins
+  become: yes
+
+  tasks:
+  - name: Append jenkins repository and keys
+    shell:  |
+      curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo tee /usr/share/keyrings/jenkins-keyring.asc > /dev/null
+      echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] https://pkg.jenkins.io/debian-stable binary/ | sudo tee \
+      /etc/apt/sources.list.d/jenkins.list > /dev/null
+      exit 0
+    args:
+      warn: false
+    tags:
+      - keys
+      - jenkins
+
+  - name: Update packages
+    apt:
+      update_cache: yes
+    tags: packages
+
+  - name: Install jenkins dependencies
+    apt:
+      pkg:
+        - openjdk-8-jdk
+        - openjdk-11-jdk
+        - jenkins
+    tags: 
+      - packages
+      - java
+      - jenkins
+  
+  - name: Start jenkins daemon
+    systemd:
+      name:   jenkins
+      state:  started
+    tags: 
+      - daemon
+      - jenkins
+
+
+- name: Admin data for jenkins
+  hosts: jenkins
+  become: yes
+
+  tasks:
+    - name: Read SECRET content
+      command: cat initialAdminPassword chdir=/var/lib/jenkins/secrets
+      register: secret_output
+
+    - name: Print SECRET
+      debug:
+        msg: "{{secret_output}}"
+
+
+
+
+
+
+
+
+
+...
+
