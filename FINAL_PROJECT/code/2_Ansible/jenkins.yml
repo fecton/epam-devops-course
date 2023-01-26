@@ -1,0 +1,22 @@
+- name: Install Jenkins on jenkins group
+  hosts:  jenkins
+  become: yes
+
+  tasks:
+  - name: Append jenkins repository and keys
+    shell:  jenkins_rep.sh
+
+  - name: Install jenkins dependencies
+    name:   jenkins openjdk-8-jdk openjdk-11-jdk
+    state:  latest
+  
+  - name: Enable jenkins daemon
+    name:   jenkins
+    state:  enabled
+
+  - name: Start jenkins daemon
+    name:   jenkins
+    state:  started
+
+
+

@@ -1,0 +1,12 @@
+[servers]
+master  ansible_host=3.127.139.241    ansible_ssh_private_key_file=~/.ssh/jenkins_host
+slave   ansible_host=3.71.8.4         ansible_ssh_private_key_file=~/.ssh/jenkins_slave
+prod    ansible_host=18.159.206.163   ansible_ssh_private_key_file=~/.ssh/prod
+
+[jenkins]
+master
+slave
+
+[servers:vars]
+ansible_user=ubuntu
+
