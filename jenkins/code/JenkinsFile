@@ -1,4 +1,17 @@
 pipeline {
+    agent {
+        node {
+            label 'slave'
+        }
+    }
+
+    environment {
+        PROD_IP = "18.159.206.163"
+        ASSBOT_FOLDER="/home/ubuntu/"
+        REPOSITORY_HTTP="https://github.com/fecton/assbot.git"
+        REPOSITORY_SSH="git@github.com:fecton/assbot.git"
+    }
+
     stage('Checkout'){
         steps{
             echo '[CHECKOUT : STARTED]'
@@ -35,11 +48,9 @@ pipeline {
         steps{
             echo '[DEPLOY : STARTED]'
 
-            PROD_IP="18.159.206.163"
             ssh -i ~/.ssh/prod ubuntu@$PROD_IP 'bash -s' < /home/ubuntu/scripts/deploy.sh
 
             echo '[DEPLOY : FINISHED]'
         }
     }
-
 }
