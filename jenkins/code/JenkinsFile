@@ -1,0 +1,45 @@
+pipeline {
+    stage('Checkout'){
+        steps{
+            echo '[CHECKOUT : STARTED]'
+
+            echo '[CHECKOUT : FINISHED]'
+        }
+    }
+    
+    stage('Build'){
+        steps{
+            echo '[BUILD : STARTED]'
+
+            echo '[BUILD : FINISHED]'
+        }
+    }
+
+    stage('Test'){
+        steps{
+            echo 'Testing...'
+            
+            echo '[TEST : STARTED]'
+
+            python3 -m venv venv
+            source venv/bin/activate
+            pip3 install -r requirements.txt
+            cd tests/
+            python3 config_test.py
+
+            echo '[TEST : FINISHED]'
+        }
+    }
+
+    stage('Deploy'){
+        steps{
+            echo '[DEPLOY : STARTED]'
+
+            PROD_IP="18.159.206.163"
+            ssh -i ~/.ssh/prod ubuntu@$PROD_IP 'bash -s' < /home/ubuntu/scripts/deploy.sh
+
+            echo '[DEPLOY : FINISHED]'
+        }
+    }
+
+}
